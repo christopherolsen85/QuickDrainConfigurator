@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="js/jqueryUI/jquery-ui.theme.css">
+	<script src="js/jqueryUI/jquery-ui.js"></script>
+    <script type="text/javascript" src="scrollbar/tinyscrollbar.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	
+</head>
+<body>
+	<div class="cjoMainContainer">
+					
+		<div class="cjoSectionHeader">
+			1. CHOOSE PRODUCT LINE
+		</div>
+		<div class="row cjoProductLineRow">
+			<div class="col-xs-4 cjoProductLineButton">
+				<div class="cjoProductLineButtonInner cjoProductLineSelected" data-productline="proline">
+					<img class="cjoProductLineLogo" src="images/ProductLine/PLprolineBLACK.png" data-productline="proline">
+					<div class="cjoProductLineDropdown">
+						<hr class="cjoProductLineDropdownLine">
+						<p>Stainless Steel linear shower drain for use in projects that require or desire stainless steel trough.</p>
+						<p>Made of 316L stainless Steel with 304SS cover.</p>
+						<p>Is usually used in specialty applications. Does not have clamping collar but uses transition tape and liquid waterproofing.</p>
+						<p>Designed to be used with liquid waterproofing (Hot mop, metal pans or standard shower pan liners).</p>
+						<p>Suitable for both curbed and curbless showers. Can be customized with the number and locations of the waste outlets. Size and configuration is also possible.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 cjoProductLineButton">
+				<div class="cjoProductLineButtonInner" data-productline="showerline">
+					<img class="cjoProductLineLogo" src="images/ProductLine/PLshowerline.png" data-productline="showerline">
+					<div class="cjoProductLineDropdown">
+						<hr class="cjoProductLineDropdownLine">
+						<p>Standard linear shower drain for use with any size tile or slab.</p>
+						<p>Made of PVC plastic with Stainless Steel trim and cover.</p>
+						<p>Can be used in all residential projects, most hospitality and healthcare showers.</p>
+						<p>Has clamping collar for securing waterproofing membrane to the drain body.</p>
+						<p>Designed to be used with both sheet and liquid waterproofing (Hot mop, metal pans or standard shower pan liners).</p>
+						<p>Suitable for both curbed and curbless showers.</p>
+						<p>Not possible to make custom sizes, number of outlets or outlet locations.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4 cjoProductLineButton">
+				<div class="cjoProductLineButtonInner" data-productline="walldrain">
+					<img class="cjoProductLineLogo" src="images/ProductLine/PLwalldrain.png" data-productline="walldrain">
+					<div class="cjoProductLineDropdown">
+						<hr class="cjoProductLineDropdownLine">
+						<p>New type of linear drains installed on vertical wall at the floor to wall transition. One size fits all for up to 72” of Wall length.</p>
+						<p>Made of 316L stainless Steel with 304SS cover and tiled over.</p>
+						<p>Can be used in all residential projects, most hospitality and healthcare showers.</p>
+						<p>Does not have clamping collar but uses transition tape and liquid waterproofing.</p>
+						<p>Designed to be used with liquid waterproofing (Hot mop, metal pans or standard shower pan liners).</p>
+						<p>Suitable for both curbed and curbless showers.</p>
+						<p>Not possible to make custom sizes, number of outlets or outlet locations.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+								
+		<div class="cjoSectionHeader">2. ACCESSIBILITY</div>
+		<div class="cjoAccessibilityRow">
+			<div class="cjoAccessibilityButton cjoSelected" data-accessibility="curbed">Curbed<div class="cjoBorders cjoAddBorders" ></div></div>
+			<div class="cjoAccessibilityButton" data-accessibility="curbless">Curbless<div class="cjoBorders" ></div></div>
+		</div>
+					
+		<div class="cjoSectionHeader">3. SHOWER LAYOUT</div>
+		<div class="cjoShowerLayoutRow row">
+			<div class="cjoShowerLayoutButton col-xs-3" data-showerlayout="1wall">
+				<div class="cjoShowerLayoutButtonInner cjoSelected" data-showerlayout="1wall"><img src="images/ShowerLayout/1wall.png" class="cjoShowerLayoutImage ">1-Wall<div class="cjoBorders cjoAddBorders" ></div></div>
+			</div>
+			<div class="cjoShowerLayoutButton col-xs-3" data-showerlayout="2wall">
+				<div class="cjoShowerLayoutButtonInner" data-showerlayout="2wall"><img src="images/ShowerLayout/2wall.png" class="cjoShowerLayoutImage">2-Wall<div class="cjoBorders" ></div></div>
+			</div>
+			<div class="cjoShowerLayoutButton col-xs-3" data-showerlayout="3wall">
+				<div class="cjoShowerLayoutButtonInner" data-showerlayout="3wall"><img src="images/ShowerLayout/3wall.png" class="cjoShowerLayoutImage">3-Wall<div class="cjoBorders" ></div></div>
+			</div>
+			<div class="cjoShowerLayoutButton col-xs-3" data-showerlayout="neoAngle">
+				<div class="cjoShowerLayoutButtonInner" data-showerlayout="neoAngle"><img src="images/ShowerLayout/neoAngle.png" class="cjoShowerLayoutImage">Neo Angle<div class="cjoBorders" ></div></div>
+			</div>
+		</div>
+				
+		<div class="cjoSectionHeader">4. MEASUREMENTS</div>
+		<div class="cjoMeasurementsRow">
+			<div class="cjoMeasurementsRowInner" style="">
+				<div class="cjoMeasurementsCell col-xs-4">
+					Width (a): <input id="cjoWidth" type="number" value=36 min="27" max="72" class="cjoDimensionTextBox">
+				</div>
+				<div class="cjoMeasurementsCell col-xs-4">
+					Length (b): <input id="cjoLength" type="number" value=36 min="27" max="72" class="cjoDimensionTextBox">
+				</div>
+				<div class="cjoMeasurementsCell col-xs-4">
+					Opening Width(c): <input id="cjoOpeningWidth" type="number" value=15 min="15" max="25" class="cjoDimensionTextBox">
+				</div>
+			</div>	
+			<div>Dimensions of anticipated finish opening</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="cjoSectionHeader">5. DRAIN PLACEMENT</div>
+				<div>
+					<div id="scrollbar1">
+						 <div class="scrollbar">
+							<div class="track">
+								<div class="thumb">
+									<div class="end"></div>
+								</div>
+							</div>
+						</div>
+						<div class="viewport">
+							<div class="overview">
+								<!->
+								<div class="cjoDrainPlacementOption cjoSelected" id="DP1option1" data-group="1" data-drainplacement="back"><img src="images/DrainPlacement/1_1.png" class="cjoDrainPlacementImage">1-1<div class="cjoBorders cjoAddBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option2" data-group="1" data-drainplacement="centerHoriz"><img src="images/DrainPlacement/1_2.png" class="cjoDrainPlacementImage">1-2 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option3" data-group="1" data-drainplacement="front"><img src="images/DrainPlacement/1_3.png" class="cjoDrainPlacementImage">1-3 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option4" data-group="1" data-drainplacement="back"><img src="images/DrainPlacement/1_4.png" class="cjoDrainPlacementImage">1-4 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option5" data-group="1" data-drainplacement="left"><img src="images/DrainPlacement/1_5.png" class="cjoDrainPlacementImage">1-5 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option6" data-group="1" data-drainplacement="right"><img src="images/DrainPlacement/1_6.png" class="cjoDrainPlacementImage">1-6 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option7" data-group="1" data-drainplacement="center"><img src="images/DrainPlacement/1_7.png" class="cjoDrainPlacementImage">1-7 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option8" data-group="1" data-drainplacement="centerHoriz"><img src="images/DrainPlacement/1_8.png" class="cjoDrainPlacementImage">1-8 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option9" data-group="1" data-drainplacement="front"><img src="images/DrainPlacement/1_9.png" class="cjoDrainPlacementImage">1-9 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option10" data-group="1" data-drainplacement="left"><img src="images/DrainPlacement/1_10.png" class="cjoDrainPlacementImage">1-10 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP1option11" data-group="1" data-drainplacement="right"><img src="images/DrainPlacement/1_11.png" class="cjoDrainPlacementImage">1-11 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP2option1" data-group="2" data-drainplacement="back"><img src="images/DrainPlacement/2_1.png" class="cjoDrainPlacementImage">2-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP2option2" data-group="2" data-drainplacement="front"><img src="images/DrainPlacement/2_2.png" class="cjoDrainPlacementImage">2-2 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP2option3" data-group="2" data-drainplacement="centerHoriz"><img src="images/DrainPlacement/2_3.png" class="cjoDrainPlacementImage">2-3 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option1" data-group="3" data-drainplacement="left"><img src="images/DrainPlacement/3_1.png" class="cjoDrainPlacementImage">3S-FC <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option2" data-group="3" data-drainplacement="back"><img src="images/DrainPlacement/3_2.png" class="cjoDrainPlacementImage">3S-SW <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option3" data-group="3" data-drainplacement="right"><img src="images/DrainPlacement/3_3.png" class="cjoDrainPlacementImage">3S-BW <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option4" data-group="3" data-drainplacement="front"><img src="images/DrainPlacement/3_4.png" class="cjoDrainPlacementImage">3S-SC <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option5" data-group="3" data-oppositewalls="1" data-drainplacement="center"><img src="images/DrainPlacement/3_5.png" class="cjoDrainPlacementImage">2S-CWW <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option6" data-group="3" data-oppositewalls="1" data-drainplacement="right"><img src="images/DrainPlacement/3_6.png" class="cjoDrainPlacementImage">2S-1CB <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option7" data-group="3" data-oppositewalls="1" data-drainplacement="back"><img src="images/DrainPlacement/3_7.png" class="cjoDrainPlacementImage">2S-1WL <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP3option8" data-group="3" data-oppositewalls="1" data-drainplacement="centerHoriz" ><img src="images/DrainPlacement/3_8.png" class="cjoDrainPlacementImage">2S-CCC <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP4option1" data-group="4" data-oppositewalls="1" data-drainplacement="left_right" ><img src="images/DrainPlacement/4_1.png" class="cjoDrainPlacementImage">2A-2E <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP4option2" data-group="4" data-oppositewalls="1" data-drainplacement="center" ><img src="images/DrainPlacement/4_2.png" class="cjoDrainPlacementImage">2A-C <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP4option3" data-group="4" data-drainplacement="left_front" ><img src="images/DrainPlacement/4_3.png" class="cjoDrainPlacementImage">3A-2E <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP4option4" data-group="4" data-drainplacement="left" ><img src="images/DrainPlacement/4_4.png" class="cjoDrainPlacementImage">4-4 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP4option5" data-group="4" data-drainplacement="right" ><img src="images/DrainPlacement/4_5.png" class="cjoDrainPlacementImage">4-5 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP4option6" data-group="4" data-drainplacement="center" ><img src="images/DrainPlacement/4_6.png" class="cjoDrainPlacementImage">4-6 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP5option1" data-group="5" data-drainplacement="right" ><img src="images/DrainPlacement/5_1.png" class="cjoDrainPlacementImage">1S-B <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP5option2" data-group="5" data-drainplacement="back" ><img src="images/DrainPlacement/5_2.png" class="cjoDrainPlacementImage">1S-L <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP5option3" data-group="5" data-drainplacement="left" ><img src="images/DrainPlacement/5_3.png" class="cjoDrainPlacementImage">1S-E <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP5option4" data-group="5" data-drainplacement="center" ><img src="images/DrainPlacement/5_4.png" class="cjoDrainPlacementImage">1S-CSS <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP5option5" data-group="5" data-drainplacement="centerHoriz" ><img src="images/DrainPlacement/5_5.png" class="cjoDrainPlacementImage">1S-CFB <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP5option6" data-group="5" data-drainplacement="front" ><img src="images/DrainPlacement/5_6.png" class="cjoDrainPlacementImage">1S-CR <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP6option1" data-group="6" data-drainplacement="right" ><img src="images/DrainPlacement/6_1.png" class="cjoDrainPlacementImage">1A-B <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP6option2" data-group="6" data-drainplacement="left" ><img src="images/DrainPlacement/6_2.png" class="cjoDrainPlacementImage">1A-E <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP6option3" data-group="6" data-drainplacement="center" ><img src="images/DrainPlacement/6_3.png" class="cjoDrainPlacementImage">1A-C <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP7option1" data-group="7" data-drainplacement="left" ><img src="images/DrainPlacement/7_1.png" class="cjoDrainPlacementImage">4S-FW <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP7option2" data-group="7" data-drainplacement="right" ><img src="images/DrainPlacement/7_2.png" class="cjoDrainPlacementImage">4S-BW <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP7option3" data-group="7" data-drainplacement="neoAngle" ><img src="images/DrainPlacement/7_3.png" class="cjoDrainPlacementImage">4S-E <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP7option4" data-group="7" data-drainplacement="back" ><img src="images/DrainPlacement/7_4.png" class="cjoDrainPlacementImage">7-4 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP8option1" data-group="8" data-drainplacement="neoAngle" ><img src="images/DrainPlacement/8_1.png" class="cjoDrainPlacementImage">4A-E <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP9option1" data-group="9" data-drainplacement="back" ><img src="images/DrainPlacement/9_1.png" class="cjoDrainPlacementImage">9-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP10option1" data-group="10" data-drainplacement="back" ><img src="images/DrainPlacement/10_1.png" class="cjoDrainPlacementImage">10-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP11option1" data-group="11" data-drainplacement="back" ><img src="images/DrainPlacement/11_1.png" class="cjoDrainPlacementImage">11-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP11option2" data-group="11" data-drainplacement="right" ><img src="images/DrainPlacement/11_2.png" class="cjoDrainPlacementImage">11-2 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP11option3" data-group="11" data-oppositewalls="1" data-drainplacement="back" ><img src="images/DrainPlacement/11_3.png" class="cjoDrainPlacementImage">11-3 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP12option1" data-group="12" data-drainplacement="right" ><img src="images/DrainPlacement/12_1.png" class="cjoDrainPlacementImage">12-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP13option1" data-group="13" data-drainplacement="right" ><img src="images/DrainPlacement/13_1.png" class="cjoDrainPlacementImage">13-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP13option2" data-group="13" data-drainplacement="back" ><img src="images/DrainPlacement/13_2.png" class="cjoDrainPlacementImage">13-2 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP13option3" data-group="13" data-drainplacement="front" ><img src="images/DrainPlacement/13_3.png" class="cjoDrainPlacementImage">13-3 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP14option1" data-group="14" data-drainplacement="right" ><img src="images/DrainPlacement/14_1.png" class="cjoDrainPlacementImage">14-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP15option1" data-group="15" data-drainplacement="left" ><img src="images/DrainPlacement/15_1.png" class="cjoDrainPlacementImage">15-1 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP15option2" data-group="15" data-drainplacement="right" ><img src="images/DrainPlacement/15_2.png" class="cjoDrainPlacementImage">15-2 <div class ="cjoBorders"></div></div>
+								<div class="cjoDrainPlacementOption" id="DP15option3" data-group="15" data-drainplacement="back" ><img src="images/DrainPlacement/15_3.png" class="cjoDrainPlacementImage">15-3 <div class ="cjoBorders"></div></div>
+
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option1UN" data-group="1">	<img src="images/DrainPlacement/1_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-1 N/A</span><span class="visible-md">1-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option2UN" data-group="1">	<img src="images/DrainPlacement/1_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-2 N/A</span><span class="visible-md">1-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option3UN" data-group="1">	<img src="images/DrainPlacement/1_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-3 N/A</span><span class="visible-md">1-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option4UN" data-group="1">	<img src="images/DrainPlacement/1_4.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-4 N/A</span><span class="visible-md">1-4 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option5UN" data-group="1">	<img src="images/DrainPlacement/1_5.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-5 N/A</span><span class="visible-md">1-5 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option6UN" data-group="1">	<img src="images/DrainPlacement/1_6.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-6 N/A</span><span class="visible-md">1-6 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option7UN" data-group="1">	<img src="images/DrainPlacement/1_7.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-7 N/A</span><span class="visible-md">1-7 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option8UN" data-group="1">	<img src="images/DrainPlacement/1_8.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-8 N/A</span><span class="visible-md">1-8 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option9UN" data-group="1">	<img src="images/DrainPlacement/1_9.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-9 N/A</span><span class="visible-md">1-9 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option10UN" data-group="1">	<img src="images/DrainPlacement/1_10.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-10 N/A</span><span class="visible-md">1-10 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP1option11UN" data-group="1">	<img src="images/DrainPlacement/1_11.png" class="cjoDrainPlacementImage"><span class="hidden-md">1-11 N/A</span><span class="visible-md">1-11 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP2option1UN" data-group="2">	<img src="images/DrainPlacement/2_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">2-1 N/A</span><span class="visible-md">2-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP2option2UN" data-group="2">	<img src="images/DrainPlacement/2_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">2-2 N/A</span><span class="visible-md">2-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP2option3UN" data-group="2">	<img src="images/DrainPlacement/2_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">2-3 N/A</span><span class="visible-md">2-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option1UN" data-group="3">	<img src="images/DrainPlacement/3_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-1 N/A</span><span class="visible-md">3-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option2UN" data-group="3">	<img src="images/DrainPlacement/3_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-2 N/A</span><span class="visible-md">3-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option3UN" data-group="3">	<img src="images/DrainPlacement/3_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-3 N/A</span><span class="visible-md">3-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option4UN" data-group="3">	<img src="images/DrainPlacement/3_4.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-4 N/A</span><span class="visible-md">3-4 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option5UN" data-group="3">	<img src="images/DrainPlacement/3_5.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-5 N/A</span><span class="visible-md">3-5 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option6UN" data-group="3">	<img src="images/DrainPlacement/3_6.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-6 N/A</span><span class="visible-md">3-6 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option7UN" data-group="3">	<img src="images/DrainPlacement/3_7.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-7 N/A</span><span class="visible-md">3-7 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP3option8UN" data-group="3">	<img src="images/DrainPlacement/3_8.png" class="cjoDrainPlacementImage"><span class="hidden-md">3-8 N/A</span><span class="visible-md">3-8 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP4option1UN" data-group="4">	<img src="images/DrainPlacement/4_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">4-1 N/A</span><span class="visible-md">4-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP4option2UN" data-group="4">	<img src="images/DrainPlacement/4_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">4-2 N/A</span><span class="visible-md">4-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP4option3UN" data-group="4">	<img src="images/DrainPlacement/4_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">4-3 N/A</span><span class="visible-md">4-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP4option4UN" data-group="4">	<img src="images/DrainPlacement/4_4.png" class="cjoDrainPlacementImage"><span class="hidden-md">4-4 N/A</span><span class="visible-md">4-4 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP4option5UN" data-group="4">	<img src="images/DrainPlacement/4_5.png" class="cjoDrainPlacementImage"><span class="hidden-md">4-5 N/A</span><span class="visible-md">4-5 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP4option6UN" data-group="4">	<img src="images/DrainPlacement/4_6.png" class="cjoDrainPlacementImage"><span class="hidden-md">4-6 N/A</span><span class="visible-md">4-6 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP5option1UN" data-group="5">	<img src="images/DrainPlacement/5_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">5-1 N/A</span><span class="visible-md">5-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP5option2UN" data-group="5">	<img src="images/DrainPlacement/5_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">5-2 N/A</span><span class="visible-md">5-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP5option3UN" data-group="5">	<img src="images/DrainPlacement/5_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">5-3 N/A</span><span class="visible-md">5-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP5option4UN" data-group="5">	<img src="images/DrainPlacement/5_4.png" class="cjoDrainPlacementImage"><span class="hidden-md">5-4 N/A</span><span class="visible-md">5-4 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP5option5UN" data-group="5">	<img src="images/DrainPlacement/5_5.png" class="cjoDrainPlacementImage"><span class="hidden-md">5-5 N/A</span><span class="visible-md">5-5 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP5option6UN" data-group="5">	<img src="images/DrainPlacement/5_6.png" class="cjoDrainPlacementImage"><span class="hidden-md">5-6 N/A</span><span class="visible-md">5-6 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP6option1UN" data-group="6">	<img src="images/DrainPlacement/6_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">6-1 N/A</span><span class="visible-md">6-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP6option2UN" data-group="6">	<img src="images/DrainPlacement/6_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">6-2 N/A</span><span class="visible-md">6-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP6option3UN" data-group="6">	<img src="images/DrainPlacement/6_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">6-3 N/A</span><span class="visible-md">6-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP7option1UN" data-group="7">	<img src="images/DrainPlacement/7_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">7-1 N/A</span><span class="visible-md">7-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP7option2UN" data-group="7">	<img src="images/DrainPlacement/7_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">7-2 N/A</span><span class="visible-md">7-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP7option3UN" data-group="7">	<img src="images/DrainPlacement/7_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">7-3 N/A</span><span class="visible-md">7-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP7option4UN" data-group="7">	<img src="images/DrainPlacement/7_4.png" class="cjoDrainPlacementImage"><span class="hidden-md">7-4 N/A</span><span class="visible-md">7-4 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP8option1UN" data-group="8">	<img src="images/DrainPlacement/8_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">8-1 N/A</span><span class="visible-md">8-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP9option1UN" data-group="9">	<img src="images/DrainPlacement/9_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">9-1 N/A</span><span class="visible-md">9-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP10option1UN" data-group="10">	<img src="images/DrainPlacement/10_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">10-1 N/A</span><span class="visible-md">10-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP11option1UN" data-group="11">	<img src="images/DrainPlacement/11_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">11-1 N/A</span><span class="visible-md">11-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP11option2UN" data-group="11">	<img src="images/DrainPlacement/11_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">11-2 N/A</span><span class="visible-md">11-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP11option3UN" data-group="11">	<img src="images/DrainPlacement/11_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">11-3 N/A</span><span class="visible-md">11-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP12option1UN" data-group="12">	<img src="images/DrainPlacement/12_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">12-1 N/A</span><span class="visible-md">12-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP13option1UN" data-group="13">	<img src="images/DrainPlacement/13_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">13-1 N/A</span><span class="visible-md">13-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP13option2UN" data-group="13">	<img src="images/DrainPlacement/13_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">13-2 N/A</span><span class="visible-md">13-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP13option3UN" data-group="13">	<img src="images/DrainPlacement/13_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">13-3 N/A</span><span class="visible-md">13-3 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP14option1UN" data-group="14">	<img src="images/DrainPlacement/14_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">14-1 N/A</span><span class="visible-md">14-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP15option1UN" data-group="15">	<img src="images/DrainPlacement/15_1.png" class="cjoDrainPlacementImage"><span class="hidden-md">15-1 N/A</span><span class="visible-md">15-1 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP15option2UN" data-group="15">	<img src="images/DrainPlacement/15_2.png" class="cjoDrainPlacementImage"><span class="hidden-md">15-2 N/A</span><span class="visible-md">15-2 Unavailable</span></div>
+								<div class="cjoUnavailableOptionCell cjoDrainPlacementOption" id="DP15option3UN" data-group="15">	<img src="images/DrainPlacement/15_3.png" class="cjoDrainPlacementImage"><span class="hidden-md">15-3 N/A</span><span class="visible-md">15-3 Unavailable</span></div>
+
+
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 cjoVisualizerCell">
+				<div class="cjoVisualizerControlButton" id="cjoZoomInButton"><span class="glyphicon glyphicon-zoom-in"></span></div>
+				<div class="cjoVisualizerControlButton" id="cjoZoomOutButton"><span class="glyphicon glyphicon-zoom-out"></span></div>
+			</div>
+			<div class="col-xs-3">
+				<div class="cjoSectionHeader visible-xs">6. COVER PATTERN</div>
+				<div id="cjoCPSectionHeader" class="cjoSectionHeader hidden-xs">6. COVER PATTERN AND FINISH</div>
+				<div>
+					<div id="scrollbar2">
+						 <div class="scrollbar">
+							<div class="track">
+								<div class="thumb">
+									<div class="end"></div>
+								</div>
+							</div>
+						</div>
+						<div class="viewport">
+							<div class="overview">
+								<div class="cjoCoverPatternOption" data-coverpattern="stream" style="background-image: url('images/CPImages/CPstream.jpg');">		<div class="cjoCoverPatternLabel">Stream</div>																													<div class ="cjoBorders cjoAddBorders"></div></div>
+								<div class="cjoCoverPatternOption" data-coverpattern="lines" data-coverfinish="brushed" style="background-image: url('images/CPImages/CPlines.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Lines - B</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Lines - Brushed Finish</div>		<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="lines" data-coverfinish="polished" style="background-image: url('images/CPImages/CPlines.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Lines - P</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Lines - Polished Finish</div>		<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="cosmo" data-coverfinish="brushed" style="background-image: url('images/CPImages/CPcosmo.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Cosmo - B</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Cosmo - Brushed Finish</div>		<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="cosmo" data-coverfinish="polished" style="background-image: url('images/CPImages/CPcosmo.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Cosmo - P</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Cosmo - Polished Finish</div>		<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="vertical" data-coverfinish="brushed" style="background-image: url('images/CPImages/CPvertical.jpg');">	<div class="cjoCoverPatternLabel visible-xs visible-sm">Vert - B</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Vertical - Brushed Finish</div>	<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="vertical" data-coverfinish="polished" style="background-image: url('images/CPImages/CPvertical.jpg');">	<div class="cjoCoverPatternLabel visible-xs visible-sm">Vert - P</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Vertical - Polished Finish</div>	<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="horizontal" data-coverfinish="brushed" style="background-image: url('images/CPImages/CPhorizontal.jpg');">	<div class="cjoCoverPatternLabel visible-xs visible-sm">Horiz - B</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Horizontal - Brushed Finish</div>	<div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="horizontal" data-coverfinish="polished" style="background-image: url('images/CPImages/CPhorizontal.jpg');">	<div class="cjoCoverPatternLabel visible-xs visible-sm">Horiz - P</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Horizontal - Polished Finish</div><div class ="cjoBorders"></div>	</div>
+								<div class="cjoCoverPatternOption" data-coverpattern="tilein" style="background-image: url('images/CPImages/CPtilein.jpg');">		<div class="cjoCoverPatternLabel">Tilein</div>																													<div class ="cjoBorders"></div>	</div>
+
+								<div class="cjoCoverPatternOption cjoUnavailableOptionCell" data-coverpattern="stream" style="background-image: url('images/CPImages/CPstream.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Stream N/A</div><div class="cjoCoverPatternLabel hidden-xs hidden-sm">Stream Unavailable</div></div>
+								<div class="cjoCoverPatternOption cjoUnavailableOptionCell" data-coverpattern="lines" style="background-image: url('images/CPImages/CPlines.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Lines N/A</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Lines Unavailable</div></div>
+								<div class="cjoCoverPatternOption cjoUnavailableOptionCell" data-coverpattern="cosmo" style="background-image: url('images/CPImages/CPcosmo.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Cosmo N/A</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Cosmo Unavailable</div></div>
+								<div class="cjoCoverPatternOption cjoUnavailableOptionCell" data-coverpattern="vertical" style="background-image: url('images/CPImages/CPvertical.jpg');">	<div class="cjoCoverPatternLabel visible-xs visible-sm">Vert N/A</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Vertical Unavailable</div></div>
+								<div class="cjoCoverPatternOption cjoUnavailableOptionCell" data-coverpattern="horizontal" style="background-image: url('images/CPImages/CPhorizontal.jpg');">	<div class="cjoCoverPatternLabel visible-xs visible-sm">Horiz N/A</div>	<div class="cjoCoverPatternLabel hidden-xs hidden-sm">Horizontal Unavailable</div></div>
+								<div class="cjoCoverPatternOption cjoUnavailableOptionCell" data-coverpattern="tilein" style="background-image: url('images/CPImages/CPtilein.jpg');">		<div class="cjoCoverPatternLabel visible-xs visible-sm">Tilein N/A</div><div class="cjoCoverPatternLabel hidden-xs hidden-sm">Tilein Unavailable</div></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="row cjoAdditionalOptionsContainer">
+			<div class="col-xs-6">
+				<div class="cjoSectionHeader">7. ADDITIONAL OPTIONS</div>
+				<div class="cjoAdditionalOptionsRow">
+					<div class="col-xs-12 col-sm-6 cjoAdditionalOptionsLabel">Waste Line Configuration:</div>
+					<div class="col-xs-12 col-sm-6 cjoDropdownMenuContainer">
+						<div class="cjoDropdownMenu">
+							<div class="cjoDropdownMenuChosen">2"-down</div><span class="glyphicon glyphicon-triangle-bottom cjoDropdownMenuArrow"></span>
+							<div class="cjoDropdownMenuDropdown">
+								<div class="cjoDropdownMenuOption">2"-down</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-xs-12 col-sm-6 cjoAdditionalOptionsLabel">Waterproofing:</div>
+					<div class="col-xs-12 col-sm-6 cjoDropdownMenuContainer">
+						<div class="cjoDropdownMenu">
+							<div class="cjoDropdownMenuChosen cjoWaterproofingChosen">Topical Liquid Waterproofing</div><span class="glyphicon glyphicon-triangle-bottom cjoDropdownMenuArrow"></span>
+							<div class="cjoDropdownMenuDropdown">
+								<div class="cjoDropdownMenuOption cjoWaterproofingOption" data-waterproofing="Hot mop">Hot mop</div>
+								<div class="cjoDropdownMenuOption cjoWaterproofingOption" data-waterproofing="Metal pans">Metal pans</div>
+								<div class="cjoDropdownMenuOption cjoWaterproofingOption" data-waterproofing="Topical liquid waterproofing">Topical liquid waterproofing</div>
+								<div class="cjoDropdownMenuOption cjoWaterproofingOption" data-waterproofing="Topical sheet waterproofing">Topical sheet waterproofing</div>
+								<div class="cjoDropdownMenuOption cjoWaterproofingOption" data-waterproofing="PVC liner">PVC liner</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-xs-12 col-sm-6 cjoAdditionalOptionsLabel">Specialty Situations:</div>
+					<div class="col-xs-12 col-sm-6 cjoDropdownMenuContainer">
+						<div class="cjoDropdownMenu">
+							<div class="cjoDropdownMenuChosen"></div><span class="glyphicon glyphicon-triangle-bottom cjoDropdownMenuArrow"></span>
+							<div class="cjoDropdownMenuDropdown">
+								<div class="cjoDropdownMenuOption">Large GPM Output</div>
+								<div class="cjoDropdownMenuOption">No Access Through Floors</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="cjoSectionHeader">FORMAT</div>
+				<div class="col-xs-4 col-sm-2 col-sm-offset-1 cjoFormatButtonOuter"><img class="cjoFormatImage" src="images/formatIcons/icon_revit_inactive.png" data-selected=0 data-format="revit"></div>
+				<div class="col-xs-4 col-sm-2 cjoFormatButtonOuter"><img class="cjoFormatImage" src="images/formatIcons/icon_autocad_inactive.png" data-selected="0" data-format="autocad"></div>
+				<div class="col-xs-4 col-sm-2 cjoFormatButtonOuter"><img class="cjoFormatImage" src="images/formatIcons/icon_pdf_inactive.png" data-selected="0" data-format="pdf"></div>
+				<div class="col-xs-4 col-sm-2 col-xs-offset-2 col-sm-offset-0 cjoFormatButtonOuter"><img class="cjoFormatImage" src="images/formatIcons/icon_jpg_inactive.png" data-selected="0" data-format="jpg"></div>
+				<div class="col-xs-4 col-sm-2 cjoFormatButtonOuter"><img class="cjoFormatImage" src="images/formatIcons/icon_word_inactive.png" data-selected="0" data-format="word"></div>
+				<div class="clearfix"></div>
+				<button type="button" class="cjoBuildConfigButton" data-toggle="modal" data-target="#cjoLoginPopup">BUILD MY CONFIGURATION</button>
+			</div>
+			
+		</div>
+		<div class="row cjoKitOptionsContainer">
+			<div class="col-xs-6">
+				<div class="cjoSectionHeader">8. KIT OPTIONS</div>
+				<div class="cjoKitOptionsRow">
+					<div class="col-xs-12 col-sm-6 cjoAdditionalOptionsLabel">Kit Option:</div>
+					<div class="col-xs-12 col-sm-6 cjoDropdownMenuContainer">
+						<div class="cjoDropdownMenu">
+							<div class="cjoDropdownMenuChosen cjoKitOptionChosen">Drain Only</div><span class="glyphicon glyphicon-triangle-bottom cjoDropdownMenuArrow"></span>
+							<div class="cjoDropdownMenuDropdown">
+								<div class="cjoDropdownMenuOption cjoKitOptionOption" data-kitoption="Drain Only">Drain Only</div>
+								<div class="cjoDropdownMenuOption cjoKitOptionOption" data-kitoption="Drain and Waterproofing">Drain and Waterproofing</div>
+								<div class="cjoDropdownMenuOption cjoKitOptionOption" data-kitoption="Whole Shower Pan">Whole Shower Pan</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="cjoLoginPopup" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content cjoPopupContent">
+				<div class="modal-header cjoPopupHeader">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="cjoPopupForm cjoLoginForm">
+						<div class="cjoPopupLabel cjoPopupFormTitle">Log In</div>
+						<div class="clearfix"></div>
+						<div class="cjoPopupLabel">Email:</div>
+						<div class="cjoPopupInputDiv"><input class="cjoPopupInput" type="text"></div>
+						<div class="cjoPopupLabel">Password:</div>
+						<div class="cjoPopupInputDiv"><input class="cjoPopupInput" type="password"></div>
+						<div class="cjoPopupLabel">&nbsp;</div>
+						<div class="cjoPopupInputDiv"><input class="cjoPopupFormButton" type="submit" value="Log In"></div>
+						<div class="cjoSwapFormsLinkDiv"><a class="cjoSwapFormsLink" href="#">Don't have an account? Sign up!</a></div>
+					</div>
+					<div class="cjoPopupForm cjoSignupForm">
+						<div class="cjoPopupLabel cjoPopupFormTitle">Create Account</div>
+						<div class="clearfix"></div>
+						<div class="cjoPopupLabel">Email:</div>
+						<div class="cjoPopupInputDiv"><input class="cjoPopupInput" type="text"></div>
+						<div class="cjoPopupLabel">Password:</div>
+						<div class="cjoPopupInputDiv"><input class="cjoPopupInput" type="password"></div>
+						<div class="cjoPopupLabel">&nbsp;</div>
+						<div class="cjoPopupInputDiv"><input class="cjoPopupFormButton" type="submit" value="Sign Up"></div>
+						<div class="cjoSwapFormsLinkDiv"><a class="cjoSwapFormsLink" href="#">Already have an account? Log in</a></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>
+	<script src="js/three/loaders/ObjectLoader.js"></script>
+	<script src="js/three/OrbitControls.js"></script>
+	<script src="js/three/FirstPersonControlsTest.js"></script>
+	<script src="js/uvMaps.js"></script>
+	<script src="js/transforms.js"></script>
+	<script src="js/drains.js"></script>
+	<script src="js/visualizer.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/drainPlacementGroups.js"></script>
+	<script src="js/reborn.js"></script>
+</body>
+</html>

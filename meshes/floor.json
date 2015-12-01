@@ -1,0 +1,16 @@
+{
+    "vertices": [48, 1.2e-05, 56, 48, -0, 1e-05, 1e-05, -0, 4e-06, 0, 1.2e-05, 56, 48, -0, 8e-06, 48, 1.2e-05, 56], 
+    "uvs": [], 
+    "normals": [0, 1, 0, 1, 0, 0, 0.650777, 0, 0.759239], 
+    "faces": [32, 1, 2, 3, 0, 0, 0, 32, 1, 0, 4, 0, 0, 1, 32, 3, 0, 1, 0, 0, 0, 32, 5, 0, 3, 2, 0, 0], 
+    "name": "UntitledGeometry", 
+    "metadata": {
+        "vertices": 6, 
+        "uvs": 0, 
+        "normals": 3, 
+        "version": 3, 
+        "type": "Geometry", 
+        "faces": 4, 
+        "generator": "io_three"
+    }
+}

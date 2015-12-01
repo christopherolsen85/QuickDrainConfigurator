@@ -1,0 +1,104 @@
+
+#primary_nav_wrap
+{
+	
+	margin-top:auto; margin-bottom:auto; height: 20px;
+}
+
+#primary_nav_wrap ul
+{
+	border: 1px solid #B2B2B2;
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-weight: normal;
+	font-size:14px;
+	line-height:20px;
+	padding:0 15px;
+	font-family: Calibri;
+}
+
+#primary_nav_wrap ul li
+{
+
+	/*border-collapse: collapse;
+	border-spacing: 0px;*/
+	height: 20px;
+	text-align: left;
+	line-height: 20px;
+	vertical-align: middle;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0px;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	/*border: 2px solid #B3B3B3;*/
+	width: 220px;
+	background-image: url('../images/kitOptionBox.png');
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:#ddd;
+}
+
+#primary_nav_wrap ul li.current-menu-item:hover
+{
+	cursor: pointer;
+	background:#ddd;
+	background-image: url('../images/kitOptionBox.png');
+}
+#primary_nav_wrap ul li.current-menu-item100
+{
+	cursor: pointer;
+	background-image: url('../images/selectBox.png');
+}
+#primary_nav_wrap ul li.current-menu-item100:hover
+{
+	cursor: pointer;
+	background-image: url('../images/selectBox.png');
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	left: -1px;
+	top:100%;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:220px;
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:20px;
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+	left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block;
+}

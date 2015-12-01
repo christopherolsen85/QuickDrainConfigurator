@@ -1,0 +1,161 @@
+*{margin: 0; padding: 0;}
+body{font-family: Calibri, sans-serif;}
+.cjoMainContainer{width: 300px; margin-left: auto; margin-right: auto; padding-bottom: 100px;}
+.cjoSectionHeader{width: 100%; background-color: #000; color: #fff; text-align: center; padding-top: 5px; padding-bottom: 5px; font-weight: bold; font-size: 70%;}
+
+.cjoProductLineRow{margin-left: 0px; margin-right: 0px; margin-top: 10px; margin-bottom: 10px;}
+.cjoProductLineButton{padding-left: 2.5px; padding-right: 2.5px; padding-top: 0px; padding-bottom: 0px;}
+.cjoProductLineButton:first-of-type{padding-left: 0px;}
+.cjoProductLineButton:last-of-type{padding-right: 0px;}
+.cjoProductLineButtonInner{width: 100%; height: 100%; background-color: #666; cursor: pointer; padding-top: 17px; padding-bottom: 17px; position: relative;}
+.cjoProductLineLogo{height: 8px; display: block; margin-left: auto; margin-right: auto;}
+.cjoProductLineSelected{background-color: #f00;}
+.cjoProductLineHighlighted{background-color: #f00;}
+.cjoProductLineDropdown{display: none; color: #fff; font-size: 50%; position: absolute; top: 100%; left: 0px; z-index: 50; width: 100%; height: 310px; background-color: #f00; padding-left: 5px; padding-right: 5px; box-sizing: border-box;}
+.cjoProductLineDropdownLine{width: 100%; margin-top: 0px; margin-bottom: 10px;}
+
+
+.cjoAccessibilityRow{width: 100%; padding-top: 10px; padding-bottom: 10px; padding-left: 25px; padding-right: 25px;}
+.cjoAccessibilityButton{background-color: #ddd; display: inline-block; width: 48%; text-align: center; padding-top: 5px; padding-bottom: 5px; cursor: pointer; position: relative;}
+.cjoAccessibilityButton:first-of-type{margin-right: 3px;}
+.cjoAccessibilityButton:last-of-type{margin-left: 3px;}
+.cjoAccessibilitySelected{background-color: #bbb;}
+
+
+.cjoShowerLayoutRow{margin: 10px 0px; font-size: 75%;}
+.cjoShowerLayoutButton {display: inline-block; text-align: center; padding: 0px 2.5px; padding-bottom: 5px; cursor: pointer;}
+.cjoShowerLayoutButtonInner{margin-right: 3px; width: 100%; background-color: #ddd; padding: 5px 0px; position: relative;}
+.cjoShowerLayoutImage{width: 70%; display: block; margin: auto;}
+
+.cjoMeasurementsRow{font-size: 65%; padding: 0px; margin: 10px 0px; text-align: center;}
+.cjoMeasurementsCell{text-align: left; padding: 0px;}
+.cjoMeasurementsRowInner{display:inline-block; width: 90%; margin:auto;}
+.cjoMeasurementsOpeningWidth{}
+.cjoDimensionTextBox {width: 20px; height: 18px; background-image: url("../images/dimensionBox.png"); background-size: cover; border: 1px solid #B2B2B2; margin: auto; padding: 2px;}
+
+
+
+.cjoDrainPlacementOption{height: 48px; margin-top: 3px; margin-bottom: 3px; padding-top: 5px; padding-bottom: 5px; background-color: #e6e6e6; font-size: 70%; text-align: center; position: relative; cursor: pointer;}
+.cjoDrainPlacementOption:first-of-type{margin-top: 0px;}
+.cjoDrainPlacementOption:last-of-type{margin-bottom: 0px;}
+.cjoDrainPlacementImage{width: 50%; display: block; margin-left: auto; margin-right: auto;}
+
+
+
+.cjoVisualizerDummy{background-image: url("../images/visualizerDummy.png"); background-size: cover; background-position: center center; height: 248px;}
+.cjoVisualizerCell{height: 248px; padding: 0; position: relative;}
+.cjoVisualizerControlButton{ cursor: pointer; font-size: 90%; position: absolute; background-color: #0ff; padding: 5px;}
+#cjoZoomInButton{left: 0px; top: 0px;}
+#cjoZoomOutButton{right: 0px; top: 0px;}
+
+.cjoCoverPatternOption{font-size: 70%; height: 48px; margin-top: 3px; margin-bottom: 3px; background-color: #000; cursor: pointer; position: relative; padding-top: 30px; background-size: cover; background-position: 100% 50%; color: #fff;}
+.cjoCoverPatternOption:first-of-type{margin-top: 0px;}
+.cjoCoverPatternOption:last-of-type{margin-bottom: 0px;}
+.cjoCoverPatternLabel{text-align: center; margin-left: auto; margin-right: auto;}
+
+
+
+.cjoAdditionalOptionsContainer{margin-top: 20px;}
+.cjoAdditionalOptionsRow{font-size: 70%;}
+.cjoAdditionalOptionsLabel{padding-left: 0px; padding-right: 0px;}
+.cjoDropdownMenuContainer{padding-left: 0px; padding-right: 0px; margin-bottom: 10px; position: relative;}
+.cjoDropdownMenu{width: 100%; min-height: 14px; padding-left: 0px; padding-right: 0px; position: relative; background-color: #ddd; padding-top: 0px; padding-bottom: 0px; border: 1px solid #999; cursor: pointer;}
+.cjoDropdownMenuArrow{color: #999; position: absolute; top: 5px; right: 5px;}
+.cjoDropdownMenuDropdown{width: 100%; background-color: #fff; display: none; position: absolute; top: 100%; left: -1px; z-index: 1000; border: 1px solid #999; box-sizing: content-box;}
+.cjoDropdownMenuChosen{padding: 3px; min-height: 20px;}
+.cjoDropdownMenuOption{padding: 3px;}
+.cjoDropdownMenuOption:hover{background-color: #ddd;}
+
+.cjoFormatButtonOuter{padding: 3px; }
+.cjoFormatImage{width: 100%; cursor: pointer;}
+.cjoBuildConfigButton{background-color: #f00; color: #fff; padding: 3px; text-align: center; font-size: 70%; margin-top: 30px; margin-left: auto; margin-right: auto; display: block; border: none;}
+
+.cjoKitOptionsContainer{padding: 0;}
+.cjoKitOptionsRow{font-size: 70%;}
+
+.cjoUnavailableOptionCell{ opacity: .5; background-color: #E6E6E6; display: none;}
+.cjoUnavailableShow{display:none;}
+
+
+.cjoPopupContent{border: none; border-radius: 0px; background-image: url("../images/Login/loginbackground.jpg"); background-position: bottom right; background-size: 200px auto; background-repeat: no-repeat;}
+.cjoPopupHeader{border: none;}
+.cjoPopupFormTitle{font-weight: bolder;}
+.cjoPopupLabel{display: inline-block; width: 25%; text-align: right;}
+.cjoPopupInputDiv{display: inline-block; width: 70%; margin-bottom: 5px; margin-top: 5px;}
+.cjoPopupFormButton{background-color: #068688; border: none; color: #fff; padding: 5px; width: 100px;}
+.cjoSwapFormsLinkDiv{padding-left: 25%;}
+.cjoSwapFormsLink, .cjoSwapFormsLink:visited, .cjoSwapFormsLink:hover, .cjoSwapFormsLink:active{color: #068688; text-decoration: underline;}
+.cjoSignupForm{display: none;}
+
+
+#scrollbar1 { width: 100%; margin-left: 0px; margin-right: 0px; margin-bottom: 20px; margin-top: 10px;}
+#scrollbar1 .viewport { width: 90%; height: 200px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar1 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 5%; right: 0px;}
+#scrollbar1 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:100%; position: relative; padding: 0 1px;}
+#scrollbar1 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 90%; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5%; }
+#scrollbar1 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+#scrollbar2 { width: 100%; margin-left: 0px; margin-right: 0px; margin-bottom: 20px; margin-top: 10px;}
+#scrollbar2 .viewport { width: 90%; height: 200px; overflow: hidden; position: relative; }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollbar2 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 5%; right: 0px;}
+#scrollbar2 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:100%; position: relative; padding: 0 1px;}
+#scrollbar2 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 90%; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5%; }
+#scrollbar2 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar2 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+
+
+
+.cjoBorders{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+.cjoAddBorders{border: 2px solid red; box-sizing: border-box;}
+.cjoSelected{background-color: #B2B2B2;}
+
+.overview{width: 100%;}
+
+
+@media screen and (min-width: 992px)
+{
+	*{font-size: 16px;}
+	.cjoMainContainer{width: 900px;}
+	.cjoSectionHeader{font-size: 16px; padding-top: 10px; padding-bottom: 10px;}
+
+	.cjoAddBorders{border: 4px solid red;}
+
+	.cjoAccessibilityButton{font-size: 16px; padding-top: 12px; padding-bottom: 12px;}
+
+	#cjoCPSectionHeader{font-size: 14px;}
+
+	.cjoProductLineLogo{height: 22px;}
+	.cjoProductLineButton{height: 130px;}
+	.cjoProductLineButtonInner{padding-top: 50px; padding-bottom: 10px;}
+	.cjoProductLineDropdown{height: 470px; padding-left: 10px; padding-right: 10px;}
+
+	.cjoShowerLayoutButtonInner{font-size: 16px; padding-bottom: 18px;}
+	.cjoShowerLayoutImage{width: 70px;}
+
+	.cjoMeasurementsRow{margin-top: 20px; margin-bottom: 20px;}
+	.cjoMeasurementsRowInner{width: 55%;}
+	.cjoDimensionTextBox{width: 40px;}
+
+	.cjoDrainPlacementOption{height: 116px; padding-top: 15px; margin-bottom: 15px; width: 100%; font-size: 100%;}
+	.cjoDrainPlacementImage{width: 33%;}
+
+	.cjoCoverPatternOption{height: 116px; font-size: 100%; margin-bottom: 15px; padding-top: 95px;}
+
+	#scrollbar1 .viewport { height: 320px;}
+	#scrollbar2 .viewport {height:  320px;}
+	.cjoVisualizerDummy{height: 373px;}
+	.cjoVisualizerCell{height: 373px;}
+
+	.overview{width: 100%;}
+
+	.cjoAdditionalOptionsRow, .cjoKitOptionsRow {margin-top: 15px;}
+	
+	.cjoBuildConfigButton{padding: 8px; font-size: 100%;}
+
+
+
+}
